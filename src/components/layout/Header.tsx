@@ -27,7 +27,7 @@ export default function Header({
         <Head>
             <meta name="viewport" content="width=device-width" />
             <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-            <link rel="canonical" href={`${baseUrl}/${asPath}`} />
+            <link rel="canonical" href={`${baseUrl}${asPath}`} />
             <link rel="apple-touch-icon" sizes="192x192" href="/logo_192x192.png" />
             <link rel="manifest" href="/site.webmanifest" />
             <link rel="mask-icon" href="/logo_192x192.png" color="#01406C" />
