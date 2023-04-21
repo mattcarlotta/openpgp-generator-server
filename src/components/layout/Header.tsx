@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import concatTitle from '../../utils/concatTitle'
-import getBaseUrl from '../../utils/getBaseUrl'
-import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
 export type HeaderProps = {
@@ -16,12 +14,8 @@ export default function Header({
     type = 'website'
 }: HeaderProps) {
     const { asPath } = useRouter()
-    const [baseUrl, setBaseUrl] = useState('');
+    const baseUrl = process.env.NEXT_PUBLIC_HOST_URL
     const documentTitle = concatTitle(title, description);
-
-    useEffect(() => {
-        setBaseUrl(getBaseUrl())
-    }, [])
 
     return (
         <Head>
