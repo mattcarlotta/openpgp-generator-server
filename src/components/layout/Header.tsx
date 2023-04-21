@@ -11,7 +11,7 @@ export type HeaderProps = {
 }
 
 export default function Header({
-    description = 'A fullstack developer who is passionate about open-source projects, helping the web development community, and building SEO optimized applications',
+    description = 'OpenPGP Key Generator',
     title = '',
     type = 'website'
 }: HeaderProps) {
@@ -42,7 +42,7 @@ export default function Header({
             <meta property="og:title" content={documentTitle} />
             <meta property="og:description" content={description} />
             <meta property="og:url" content={type} />
-            <meta property="og:site_name" content="OpenPGP Key Generator - Matt Carlotta" />
+            <meta property="og:site_name" content="OpenPGP Key Generator | Matt Carlotta" />
             <title>{documentTitle}</title>
         </Head>
     )
